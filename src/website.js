@@ -1,3 +1,5 @@
+import loadHome from './home.js'
+
 function createNav() {
     const nav = document.createElement('nav');
     nav.classList.add('nav');
@@ -8,6 +10,7 @@ function createNav() {
     homeButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeButton);
+        loadHome()
     });
 
     const menuButton = document.createElement("button");
@@ -60,7 +63,7 @@ function setActiveButton(button) {
 }
 
 function createMain() {
-    const main = document.createElement("main");
+    const main = document.createElement('main');
     main.classList.add("main");
     main.setAttribute("id", "main");
     return main;
@@ -68,8 +71,12 @@ function createMain() {
 
 function createWebsite() {
     const mainContent = document.getElementById("content");
+
     mainContent.appendChild(createHeader());
     mainContent.appendChild(createMain());
+
+    setActiveButton(document.querySelector(".nav-button"));
+    loadHome();
 }
 
 export default createWebsite;
