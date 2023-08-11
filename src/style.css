@@ -83,7 +83,8 @@ body {
     justify-content: center;
     background: url('./chicken3.jpg');
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat;
 }
 
 .home {
