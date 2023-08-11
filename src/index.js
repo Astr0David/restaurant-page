@@ -1,5 +1,9 @@
 import './style.css';
+import createWebsite from './website.js'
 
-const main_content = document.createElement('div');
+const mainContent = document.createElement('div');
+mainContent.setAttribute('id', 'content')
 
-document.body.appendChild(main_content);
+document.body.appendChild(mainContent);
+
+createWebsite();
