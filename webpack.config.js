@@ -21,4 +21,12 @@ module.exports = {
             title: 'Restaurant Page',
         }),
     ],
+    module: {
+        rules: [
+          {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+          },
+        ],
+      },
 };
