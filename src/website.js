@@ -59,9 +59,17 @@ function setActiveButton(button) {
     button.classList.add("active");
 }
 
+function createMain() {
+    const main = document.createElement("main");
+    main.classList.add("main");
+    main.setAttribute("id", "main");
+    return main;
+}
+
 function createWebsite() {
     const mainContent = document.getElementById("content");
     mainContent.appendChild(createHeader());
+    mainContent.appendChild(createMain());
 }
 
 export default createWebsite;
