@@ -1,5 +1,3 @@
-import './style.css';
-
 function createNav() {
     const nav = document.createElement('nav');
     nav.classList.add('nav');
