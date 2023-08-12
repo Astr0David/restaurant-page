@@ -4,11 +4,15 @@ function createHome() {
     const home = document.createElement('div');
     home.classList.add('home');
 
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('image-container')
+
     const chickenImage = document.createElement('img');
     chickenImage.src = Image;
 
     home.appendChild(createParagraph("Simply delicious chicken since 2023."));
-    home.appendChild(chickenImage);
+    imageContainer.appendChild(chickenImage)
+    home.appendChild(imageContainer);
     home.appendChild(createParagraph("130 locations worldwide!"));
     home.appendChild(createParagraph("Order online or visit us in store :)"));
 
