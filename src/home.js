@@ -14,7 +14,7 @@ function createHome() {
     imageContainer.appendChild(chickenImage)
     home.appendChild(imageContainer);
     home.appendChild(createParagraph("130 locations worldwide!"));
-    home.appendChild(createParagraph("Order online or visit us in store :)"));
+    home.appendChild(createParagraph("Order online or visit us in store"));
 
     return home
 }
