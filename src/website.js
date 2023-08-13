@@ -1,5 +1,6 @@
 import loadHome from './home.js'
 import loadContact from './contact.js'
+import loadMenu from './menu.js'
 
 function createNav() {
     const nav = document.createElement('nav');
@@ -20,6 +21,7 @@ function createNav() {
     menuButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuButton);
+        loadMenu()
     });
 
     const contactButton = document.createElement("button");

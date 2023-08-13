@@ -1,4 +1,4 @@
-import Image from './chicken2.jpg'
+import Image from './images/chicken2.jpg'
 
 function createHome() {
     const home = document.createElement('div');
