@@ -17,91 +17,91 @@ const menuItems = [
     {
         image: theClassicBurger,
         name: 'Classic Burger',
-        price: '$5.99',
+        price: '£5.99',
         description: 'Chicken fillet, lettuce, pickles, mayo'
     },
     {
         image: theSpicyBurger,
         name: 'Spicy Burger',
-        price: '$5.99',
+        price: '£5.99',
         description: 'Spicy chicken fillet, lettuce, spicy sauce, spicy slaw'
     },
     {
         image: theVeganBurger,
         name: 'Vegan Burger',
-        price: '$6.99',
+        price: '£6.99',
         description: 'Vegan fillet, lettuce, spicy sauce, pink pickled onions'
     },
     {
         image: theClassicWrap,
         name: 'Classic Wrap',
-        price: '$3.99',
+        price: '£3.99',
         description: 'Tender, lettuce, pickles, mayo'
     },
     {
         image: theSpicyWrap,
         name: 'Spicy Wrap',
-        price: '$3.99',
+        price: '£3.99',
         description: 'Spicy tender, lettuce, spicy sauce, spicy slaw'
     },
     {
         image: theLargeClassicWrap,
         name: 'Large Classic Wrap',
-        price: '$4.99',
+        price: '£4.99',
         description: 'Two tenders, lettuce, pickles, mayo'
     },
     {
         image: theSpicyWrap,
         name: 'Large Spicy Wrap',
-        price: '$4.99',
+        price: '£4.99',
         description: 'Two spicy tenders, lettuce, spicy sauce, spicy slaw'
     },
     {
         image: theClassicBite,
         name: 'Classic Chicken Bite',
-        price: '$2.99',
+        price: '£2.99',
         description: 'Tender, pickles, mayo'
     },
     {
         image: theSpicyBite,
         name: 'Spicy Chicken Bite',
-        price: '$2.99',
+        price: '£2.99',
         description: 'Spicy tender, spicy sauce, spicy slaw'
     },
     {
         image: theClassicWings,
         name: 'Classic Wings',
-        price: '$3.49',
+        price: '£3.49',
         description: ''
     },
     {
         image: theHotWings,
         name: 'Hot Wings',
-        price: '$3.49',
+        price: '£3.49',
         description: ''
     },
     {
         image: theClassicTenders,
         name: 'Classic Tenders',
-        price: '$3.49',
+        price: '£3.49',
         description: ''
     },
     {
         image: theSpicyTenders,
         name: 'Spicy Tenders',
-        price: '$3.49',
+        price: '£3.49',
         description: ''
     },
     {
         image: theClassicFries,
         name: 'Classic Fries',
-        price: '$1.99',
+        price: '£1.49',
         description: ''
     },
     {
         image: theCheeseFries,
         name: 'Cheese Fries',
-        price: '$1.99',
+        price: '£1.99',
         description: ''
     },
 ];
