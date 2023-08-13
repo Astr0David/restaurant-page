@@ -111,9 +111,11 @@ function createMenuItem(itemData) {
     const image = document.createElement('img');
     image.src = itemData.image;
     menuItem.appendChild(image);
-    menuItem.appendChild(createParagraph(itemData.name));
-    menuItem.appendChild(createParagraph(itemData.price));
-    menuItem.appendChild(createParagraph(itemData.description));
+    menuItem.appendChild(createParagraph(itemData.name, 'title'));
+    menuItem.appendChild(createParagraph(itemData.price, 'price'));
+    if (itemData.description) {
+        menuItem.appendChild(createParagraph(itemData.description, 'description'));
+    }
     return menuItem;
 }
 
@@ -129,9 +131,12 @@ function createMenu() {
     return menu;
 }
 
-function createParagraph(text) {
+function createParagraph(text, className) {
     const paragraph = document.createElement("p");
     paragraph.textContent = text;
+    if (className) {
+        paragraph.classList.add(className);
+    }
     return paragraph;
 }
 

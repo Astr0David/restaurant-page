@@ -27,7 +27,7 @@ function createParagraph(text) {
 
 function loadHome() {
     const main = document.getElementById("main");
-    main.style.alignItems = 'center';
+    main.style.alignItems = 'flex-start';
     main.textContent = "";
     main.appendChild(createHome());
 }
