@@ -31,6 +31,7 @@ function createParagraph(text) {
 
 function loadContact() {
     const main = document.getElementById("main");
+    main.style.alignItems = 'center';
     main.textContent = "";
     main.appendChild(createContact());
 }

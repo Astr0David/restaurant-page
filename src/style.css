@@ -12,10 +12,10 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1,1fr) repeat(1,7fr);
-    grid-template-areas: 
-    'header'
-    'main';
+    grid-template-rows: repeat(1, 1fr) repeat(1, 7fr);
+    grid-template-areas:
+        'header'
+        'main';
     height: 100vh;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .main {
-    grid-area: main; 
+    grid-area: main;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,6 +85,7 @@ body {
     background-size: contain;
     background-repeat: repeat;
     margin: 0;
+    overflow-y: auto;
 }
 
 .home {
@@ -107,7 +108,7 @@ body {
     max-height: 283px;
 }
 
-.image-container img{
+.image-container img {
     width: 100%;
     height: 100%;
     border-radius: 5%;
@@ -146,12 +147,14 @@ body {
 .menu {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(345px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(343px, 1fr));
     gap: 3rem;
     font-family: 'Bricolage Grotesque', sans-serif;
     width: 90%;
     font-size: 1rem;
+    padding: 3rem 0rem;
 }
+
 .menu div {
     background-color: white;
     border-radius: 5%;
@@ -167,7 +170,7 @@ body {
     word-wrap: break-word;
 }
 
-.menu div p:first-child{
+.menu div p:first-child {
     font-size: 1.5rem;
     font-weight: 600;
 }
